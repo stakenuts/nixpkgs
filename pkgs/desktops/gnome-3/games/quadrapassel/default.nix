@@ -8,11 +8,11 @@ let
   pname = "quadrapassel";
 in stdenv.mkDerivation rec {
   name = "${pname}-${version}";
-  version = "3.32.0";
+  version = "3.33.90";
 
   src = fetchurl {
     url = "mirror://gnome/sources/quadrapassel/${stdenv.lib.versions.majorMinor version}/${name}.tar.xz";
-    sha256 = "1zhi1957knz9dm98drn2dh95mr33sdch590yddh1f8r6bzsfjvpy";
+    sha256 = "1sdilyia9zckd3isyj52bn3vv9g5i7jj3hh1626fpa04szxnynzm";
   };
 
   nativeBuildInputs = [
