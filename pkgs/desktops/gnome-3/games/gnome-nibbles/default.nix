@@ -4,11 +4,11 @@
 
 stdenv.mkDerivation rec {
   pname = "gnome-nibbles";
-  version = "3.32.0";
+  version = "3.34.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-nibbles/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "0g627pzbfywiy2rsh4aidgbln9s4j5m8pryw4cgr5ygc4z8l6l9p";
+    sha256 = "0al0znl26y3xcdq6ilv78g54pz0fcw5lr9rhhf9g9rkyigd5056n";
   };
 
   nativeBuildInputs = [ pkgconfig wrapGAppsHook intltool itstool libxml2 ];
