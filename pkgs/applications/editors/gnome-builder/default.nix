@@ -42,11 +42,11 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "gnome-builder";
-  version = "3.32.4";
+  version = "3.33.90";
 
   src = fetchurl {
     url = "mirror://gnome/sources/${pname}/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "0xip58m206p8wa28p0a3y4ykylzr5xzmirjl3dspg4j25r08i8qr";
+    sha256 = "168ch7di1nn2qvvw8nsyv6d40iizw84ici8zl0py0ndri3rddik1";
   };
 
   nativeBuildInputs = [
