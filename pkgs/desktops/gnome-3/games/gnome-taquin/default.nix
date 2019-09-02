@@ -5,11 +5,11 @@
 
 stdenv.mkDerivation rec {
   pname = "gnome-taquin";
-  version = "3.32.0";
+  version = "3.34.0";
 
   src = fetchurl {
     url = "mirror://gnome/sources/gnome-taquin/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
-    sha256 = "1kyxh68gg7clxg22ls4sliisxb2sydwccbxqgfvxjg2fklr6r1lm";
+    sha256 = "0jhfryqim98m9i84k18r4xb83q2g2198mn4igmr05sr974f0j578";
   };
 
   passthru = {
