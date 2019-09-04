@@ -25,7 +25,7 @@ in stdenv.mkDerivation {
   nativeBuildInputs = [ intltool pkgconfig ];
 
   # Fixes deprecation errors with networkmanager 1.10.2
-  NIX_CFLAGS_COMPILE = "-Wno-deprecated-declarations";
+  NIX_CFLAGS_COMPILE = "-Wno-error";
 
   configureFlags = [
     "--without-libnm-glib"
