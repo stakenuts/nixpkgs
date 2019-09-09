@@ -14,6 +14,7 @@ stdenv.mkDerivation rec {
   configureFlags = [
     "--with-udev-base-dir=${placeholder "out"}/lib/udev"
   ];
+  NIX_CFLAGS_COMPILE = [ "-Wno-error" ];
 
   nativeBuildInputs = [
     pkgconfig
