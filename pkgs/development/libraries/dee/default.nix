@@ -43,6 +43,9 @@ stdenv.mkDerivation rec {
     dbus-glib
   ];
 
+  # glib-2.62 deprecrations
+  NIX_CFLAGS_COMPILE = [ "-Wno-error" ];
+
   configureFlags = [
     "--disable-gtk-doc"
     "--with-pygi-overrides-dir=${placeholder "py"}/${python3.sitePackages}/gi/overrides"
