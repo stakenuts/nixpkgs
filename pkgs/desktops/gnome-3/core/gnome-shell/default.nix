@@ -5,8 +5,7 @@
 , libpulseaudio, libical, gobject-introspection, gstreamer, wrapGAppsHook, libxslt, gcr, caribou
 , accountsservice, gdk-pixbuf, gdm, upower, ibus, networkmanagerapplet, libgnomekbd, gnome-desktop
 , gsettings-desktop-schemas, gnome-keyring, glib, gjs, mutter, evolution-data-server, gtk3
-, sassc, systemd, gst_all_1, adwaita-icon-theme, gnome-bluetooth, gnome-clocks, gnome-settings-daemon
-, asciidocFull }:
+, sassc, systemd, gst_all_1, adwaita-icon-theme, gnome-bluetooth, gnome-clocks, gnome-settings-daemon }:
 
 # http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/gnome-base/gnome-shell/gnome-shell-3.10.2.1.ebuild?revision=1.3&view=markup
 
