@@ -3,7 +3,7 @@
 , libgudev, vala, docbook_xml_dtd_43, docbook_xsl, appstream-glib
 , libxslt, yelp-tools, gnome-common, gtk-doc
 , adwaita-icon-theme, librsvg, totem, gdk-pixbuf, gnome3, gnome-desktop, libxml2
-, meson, ninja, fetchpatch, dbus, python3 }:
+, meson, ninja, dbus, python3 }:
 
 stdenv.mkDerivation rec {
   pname = "cheese";
@@ -13,13 +13,6 @@ stdenv.mkDerivation rec {
     url = "mirror://gnome/sources/cheese/${stdenv.lib.versions.majorMinor version}/${pname}-${version}.tar.xz";
     sha256 = "0wvyc9wb0avrprvm529m42y5fkv3lirdphqydc9jw0c8mh05d1ni";
   };
-
-  patches = [
-    (fetchpatch {
-      url = "https://gitlab.gnome.org/GNOME/cheese/commit/4a87e85672e6eed8547945c907c153dcbb55d64c.patch";
-      sha256 = "133zs0q4gla4vrwmhlkbg74zqk44sd4825pcq6733nv02xkx76b1";
-    })
-  ];
 
   postPatch = ''
     chmod +x meson_post_install.py
