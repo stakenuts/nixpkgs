@@ -11841,6 +11841,8 @@ in
 
   judy = callPackage ../development/libraries/judy { };
 
+  jormungandr = callPackage ../applications/blockchains/jormungandr { };
+
   kdeFrameworks =
     let
       mkFrameworks = import ../development/libraries/kde-frameworks;
